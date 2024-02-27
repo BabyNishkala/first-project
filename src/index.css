@@ -108,6 +108,18 @@ button{
 .App{
     text-align: center;
 }
+nav{
+    padding: 20px;
+    background-color: aqua;
+}
+nav a{
+    margin-right: 15px;
+}
+nav a.active{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
 /*.cocktail-data{
     display: grid;
     grid-template-columns: 1fr;

@@ -1,5 +1,8 @@
 import React from "react";
-import Final from "./customhook/example3/custom1";
+import Navbar from "./route/nav";
+import About from "./route/about";
+import Home from "./route/home";
+import { Routes, Route} from "react-router-dom";
 //import Final2 from "./customhook/counter";
 //----without jsx---
 //function App(){
@@ -977,7 +980,11 @@ const Profile =(props) =>{
 function App() {
   return(
     <div className="App">
-      <Final/>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+      </Routes>
     </div>
   );
 };
